@@ -1,0 +1,157 @@
+.column {
+    float: left;
+    width: 25%;
+}
+.center{
+
+  margin: auto;
+    width: 50%;
+    background-color: #73808c;
+    padding: 10px;
+
+}
+#custom-login .center1{
+  margin: auto;
+    width: 70%;
+    background-color: #de0857;
+    padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+section{
+  padding: 20px;
+}
+
+#examinationitem .list-inline-item{
+  padding: 15px;
+}
+#examinationitem{
+  background-color: #3a3f44cc;
+}
+.examinationlistitem{
+  background-color: #3a3f44cc;
+}
+.examinationlist{
+  padding: 5px;
+}
+.coursestream{
+  padding: 10px;
+  background-color: #3a3f44cc;
+
+}
+.footerpartision{
+  border: solid 1px #c3e2c7;
+}
+
+footer{
+  background-color: #4d7298;
+}
+#portfolio-list .col-sm-4 li{
+  width: 32%
+}
+#contact-page .row{
+  background-color: #9ebdd8
+}
+/* .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+} */
+.jumbotron-billboard .img{
+  margin-bottom: 0px;
+    opacity: 0.9;
+    color: #fff;
+    background: #000 url("http://onlinetutormumbai.online/img/SmartUniversityIndia.gif") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.jumbotron{
+  background-color: #081f36;
+}
+
+#navbarResponsive .navbar-nav{
+  background-color: #28496e;
+}
+.nav .navbar{
+  background-color: #77a1c6;
+}
+#loginmenu .navbar-nav{
+  background-color: #28496e;
+}
+.userloginform{
+  margin-top: 100px;
+  /* margin-left:50px; */
+}
+.sidenav{
+  background-color: #354A5F;
+  height: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+#college-list .pagination li{
+  padding: 8px 12px;
+  background-color: #226945;
+}
+
+
+#college-list .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#college-list .pagination a:hover:not(.active) {background-color: #ddd;}
+
+#book-list .pagination li{
+  padding: 8px 12px;
+  background-color: #226945;
+}
+
+.list-group .list-group-item{
+  background-color: seagreen;
+}
+
+#freedomship .list-group-item li{
+  background-color: #2e6a8b;
+  color: white;
+}
+
+section#contact{
+  background-color: #354A5F;
+  color: #a7dbca;
+  padding: 15px;
+}
+select{
+  padding: 10px;
+}
+section#contact .form-group input, section#contact .form-group textarea{
+  padding: 2px;
+}
+#contact-form{
+  background-color: #484338;
+}
+section#contact .form-group{
+  margin-bottom: 2px;
+}
