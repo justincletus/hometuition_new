@@ -13,4 +13,5 @@ yarn-error.log
 # ignore phpstrom build files
 .idea/
 
+# ignore the vulnerable file
 resources/views/admin_dashboard_backup/package-lock.json
