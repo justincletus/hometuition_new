@@ -1,0 +1,60 @@
+@extends('frontviews.layouts.submaster')
+@section('title', 'Articles Page')
+
+@section('content')
+<div class="container-fluid text-center">
+  <div class="row content userloginform">
+    <div class="col-sm-2 sidenav">
+      <p><a href="{{url('/admission')}}">Admission</a></p>
+      <p><a href="{{url('/courses')}}">Courses</a></p>
+      <p><a href="{{url('/exam')}}">Examination</a></p>
+      <p><a href="{{url('/library')}}">Online Library</a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+      <div class="col-md-6">
+        @if(Session::has('message'))
+        <p class="alert alert-info">{{ Session::get('message') }}</p>
+        @endif
+      </div>
+      <div class="col-sm-8 col-sm-6 col-sm-4">
+        @if(!empty($articles) && $articles->count())
+        <ul>
+
+          <?php foreach ($articles as $article): ?>
+
+            <li><a href="{{ route('articles.show', $article->slug) }}"> {{ $article->title }} </a> </li>
+
+          <?php endforeach; ?>
+
+        </ul>
+        @else
+          <h4> No University Found</h4>
+        @endif
+
+        <div class="articles-pagination">
+          {!! $articles->render() !!}
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><a href="{{ url('/contactus') }}">Advertising</a></p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+@stop
+
+<script type="text/javascript">
+// alert('test');
+
+
+</script>
