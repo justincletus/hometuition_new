@@ -14,3 +14,10 @@ npm-debug.log
 yarn-error.log
 #ignore dump file
 config/dbdump.sql
+
+# ignore vulnerable file
+resources/views/admin_dashboard_backup/package-lock.json
+
+#ignore
+.idea/
+
