@@ -4,14 +4,22 @@
 /storage/*.key
 /vendor
 .env
+.env.local
+nbproject/
+nbproject/private/private.properties
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+#ignore dump file
+config/dbdump.sql
 
-# ignore phpstrom build files
+# ignore vulnerable file
+resources/views/admin_dashboard_backup/package-lock.json
+
+#ignore
 .idea/
 
-# ignore the vulnerable file
-resources/views/admin_dashboard_backup/package-lock.json
+.DS_Store
+
