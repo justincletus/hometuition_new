@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://hometuitionbangalore.online'),
+//    'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -161,6 +162,13 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
+        Watson\BootstrapForm\BootstrapFormServiceProvider::class,
+//        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
+        //Chencha\Share\ShareServiceProvider::class,
+//        CviebrockEloquentSluggableServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -225,6 +233,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Share' => Chencha\Share\ShareFacade::class,
+        'BootForm' => Watson\BootstrapForm\Facades\BootstrapForm::class,
+//        'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        // 'DbView' => Flynsarmy\DbBladeCompiler\Facades\DbView::class,
 
     ],
 

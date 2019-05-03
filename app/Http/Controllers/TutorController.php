@@ -15,7 +15,8 @@ use App\Support;
 use Session;
 use Purifier;
 use Image;
-use Response;
+
+use Illuminate\Http\Response;
 use App\Category;
 use App\SubCat;
 use App\SubSubCat;
@@ -71,8 +72,16 @@ class TutorController extends Controller
     {
         //$slug = $slug;
         $subcat = SubCat::where('slug', $slug)->first();
-        $programs = SubSubCat::where('subcat_id', $subcat->id)->get();
-        return view('frontviews.notes.index', ['programs'=>$programs]);
+
+        if ($subcat){
+            $programs = SubSubCat::where('subcat_id', $subcat->id)->get();
+            return view('frontviews.notes.index', ['programs'=>$programs]);
+        }
+
+        return view('frontviews.pages.contactus');
+//        return new Response('No subject details found');
+
+
 
 
         //return Response::json($subsubcat);

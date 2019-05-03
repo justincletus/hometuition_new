@@ -12,7 +12,7 @@
       <?php endforeach; ?>
     </div>
     <div class="col-sm-8 text-left">
-        {{ Breadcrumbs::render('home') }}
+        {!! Breadcrumbs::render('home') !!}
       <div class="col-md-6">
         @if(Session::has('message'))
         <p class="alert alert-info">{{ Session::get('message') }}</p>

@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 use Cviebrock\EloquentSluggable\Sluggable;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
+use DaveJamesMiller\Breadcrumbs\Facades\Breadcrumbs;
 use App\Http\Requests;
 use Auth;
 use App\College;
@@ -34,6 +35,13 @@ class ServicesController extends Controller
     public function index()
     {
         $services = SubCat::where('cat_id', 1)->get();
+
+//        $data = [
+//            'breadcrumbs' => Breadcrumbs::generate()
+//        ];
+//
+//        var_dump("services");
+//        die();
 
         return view('frontviews.services.index', ['services'=>$services]);
     }
