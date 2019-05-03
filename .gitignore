@@ -20,3 +20,5 @@ resources/views/admin_dashboard_backup/package-lock.json
 
 #ignore
 .idea/
+
+.DS_Store
